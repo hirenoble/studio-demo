@@ -79,6 +79,15 @@ paths:
             application/json:
               schema:
                 $ref: ../common/models/error.v1.yaml
+    parameters:
+      name: petId
+      in: path
+      required: true
+      type: string
+    delete:
+      summary: Delete a Pet
+      tags: []
+      responses: {}
 components:
   schemas:
     Pets:
